@@ -8,10 +8,10 @@ html{}
 
 body{
   background: transparent;
-  background-image: url(../images/flag.jpg);
+  background-image: url(../images/clouds.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-blend-mode: luminosity;
+  background-blend-mode: saturation;
   background-attachment: fixed;
   background-position: left top;
 
@@ -34,7 +34,7 @@ header div{
 #logo{
   background-color: rgba(0,0,0,0.45);
   color: white;
-  padding: 0 5px;
+  padding: 2em 5px;
   margin: 0;
 }
 
@@ -67,6 +67,10 @@ footer{}
   background-color: grey;
 }
 
+.tt-suggestion,.tt-menu{
+  background-color: white;
+}
+
 p{
   letter-spacing: initial;
   text-align: justify;
@@ -97,7 +101,7 @@ a:hover{
 ul{
   list-style: none;
 }
-
+/*
 input[type="text"], textarea{
   max-width: 40em;
   border-radius: 5px;
@@ -114,6 +118,12 @@ button, input[type="button"], input[type="submit"]{
   position: relative;
   top: -1px;
   border-radius: 5px;
+}
+*/
+
+#searchButton{
+  position: relative;
+  top: 2.2px;
 }
 
 input[type="text"]:focus, textarea:focus, button:focus{
