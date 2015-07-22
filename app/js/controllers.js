@@ -52,6 +52,10 @@ heroesApp.controller('IndexController', ['$scope', '$state', 'workplaces', funct
 
         console.log(data.results);
         $scope.jobsData = data.results;
+
+        if($scope.jobsData.length == 0){
+          alert( 'You may wish to try a different search. There were no results.' );
+        }
         $scope.$apply();
         /*
         $('#gridDisplay').packery({
@@ -74,6 +78,7 @@ heroesApp.controller('SelectionController', ['$scope', '$state', function($scope
   document.title = 'heroes - selection'; //set the page title
 
   $scope.page = 1;
+  $scope.noShow = false;
   $scope.addMoreJobs = function(){
 
     var job = $('#jobName').val();
